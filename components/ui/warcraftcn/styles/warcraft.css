@@ -1,31 +1,158 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 .fantasy {
-  font-family: "Cinzel", serif;
+  font-family: "Almendra", serif;
   line-height: 1.5;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
 }
 
-.wc-btn-bg {
-  background-image: url("https://warcraftcn.com/warcraftcn/button-bg.webp");
+/* AoE2 Button - Stone/wood slab with gold trim */
+.aoe-btn-bg {
+  background: linear-gradient(
+    180deg,
+    #6b5a3e 0%,
+    #5a4a32 20%,
+    #4a3c28 50%,
+    #3e3220 80%,
+    #2c2418 100%
+  );
+  border: 2px solid #c8a951;
+  box-shadow:
+    inset 0 1px 0 rgba(200, 169, 81, 0.4),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.3),
+    0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.wc-btn-bg-sm {
-  background-image: url("https://warcraftcn.com/warcraftcn/button-bg-sm.webp");
+.aoe-btn-bg:hover {
+  background: linear-gradient(
+    180deg,
+    #7d6b4a 0%,
+    #6b5a3e 20%,
+    #5a4a32 50%,
+    #4a3c28 80%,
+    #3e3220 100%
+  );
+  border-color: #dab85e;
 }
 
-.wc-btn-bg-frame {
-  background-image: url("https://warcraftcn.com/warcraftcn/button-bg-with-frame.webp");
+/* AoE2 Small Button */
+.aoe-btn-bg-sm {
+  background: linear-gradient(
+    180deg,
+    #6b5a3e 0%,
+    #5a4a32 30%,
+    #4a3c28 70%,
+    #3e3220 100%
+  );
+  border: 2px solid #c8a951;
+  box-shadow:
+    inset 0 1px 0 rgba(200, 169, 81, 0.3),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.3),
+    0 2px 3px rgba(0, 0, 0, 0.4);
 }
 
-.wc-btn-bg-frame-sm {
-  background-image: url("https://warcraftcn.com/warcraftcn/button-bg-with-frame-sm.webp");
+.aoe-btn-bg-sm:hover {
+  background: linear-gradient(
+    180deg,
+    #7d6b4a 0%,
+    #6b5a3e 30%,
+    #5a4a32 70%,
+    #4a3c28 100%
+  );
+  border-color: #dab85e;
 }
 
-.wc-card-bg {
-  background-image: url("https://warcraftcn.com/warcraftcn/card-bg.webp");
+/* AoE2 Frame Button - Stone with ornate gold border */
+.aoe-btn-bg-frame {
+  background: linear-gradient(
+    180deg,
+    #5c5046 0%,
+    #4a4238 15%,
+    #3e362e 50%,
+    #322c24 85%,
+    #28221c 100%
+  );
+  border: 3px solid #c8a951;
+  outline: 1px solid #8b7340;
+  box-shadow:
+    inset 0 1px 0 rgba(200, 169, 81, 0.5),
+    inset 0 -2px 0 rgba(0, 0, 0, 0.4),
+    inset 2px 0 4px rgba(0, 0, 0, 0.2),
+    inset -2px 0 4px rgba(0, 0, 0, 0.2),
+    0 3px 6px rgba(0, 0, 0, 0.6);
 }
 
-.wc-input-bg {
-  background-image: url("https://warcraftcn.com/warcraftcn/input-frame.webp");
+.aoe-btn-bg-frame:hover {
+  background: linear-gradient(
+    180deg,
+    #6b5e52 0%,
+    #5c5046 15%,
+    #4a4238 50%,
+    #3e362e 85%,
+    #322c24 100%
+  );
+  border-color: #dab85e;
+}
+
+/* AoE2 Small Frame Button */
+.aoe-btn-bg-frame-sm {
+  background: linear-gradient(
+    180deg,
+    #5c5046 0%,
+    #4a4238 30%,
+    #3e362e 70%,
+    #322c24 100%
+  );
+  border: 3px solid #c8a951;
+  outline: 1px solid #8b7340;
+  box-shadow:
+    inset 0 1px 0 rgba(200, 169, 81, 0.4),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.3),
+    inset 2px 0 3px rgba(0, 0, 0, 0.2),
+    inset -2px 0 3px rgba(0, 0, 0, 0.2),
+    0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.aoe-btn-bg-frame-sm:hover {
+  background: linear-gradient(
+    180deg,
+    #6b5e52 0%,
+    #5c5046 30%,
+    #4a4238 70%,
+    #3e362e 100%
+  );
+  border-color: #dab85e;
+}
+
+/* AoE2 Card - Aged parchment with wooden frame */
+.aoe-card-bg {
+  background: linear-gradient(
+    160deg,
+    #e8d5a3 0%,
+    #dcc895 30%,
+    #d4bd88 60%,
+    #c9af78 100%
+  );
+  border: 3px solid #5a4a32;
+  box-shadow:
+    inset 0 0 20px rgba(139, 115, 64, 0.2),
+    inset 0 0 60px rgba(139, 115, 64, 0.05),
+    0 4px 12px rgba(0, 0, 0, 0.4);
+  outline: 1px solid #c8a951;
+  outline-offset: -6px;
+}
+
+/* AoE2 Input - Stone-carved inset */
+.aoe-input-bg {
+  background: linear-gradient(
+    180deg,
+    #3e362e 0%,
+    #4a4238 50%,
+    #3e362e 100%
+  );
+  border: 2px solid #c8a951;
+  box-shadow:
+    inset 0 2px 4px rgba(0, 0, 0, 0.5),
+    inset 0 0 8px rgba(0, 0, 0, 0.2),
+    0 1px 2px rgba(0, 0, 0, 0.3);
 }

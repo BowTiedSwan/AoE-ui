@@ -1,6 +1,6 @@
 ---
 title: Card
-description: A Warcraft III styled card component with parchment textures and gothic frames.
+description: An Age of Empires II styled card component with parchment textures and wooden frames.
 ---
 
 import {
@@ -18,12 +18,12 @@ import { Button } from "@/components/ui/warcraftcn/button";
 
 <Card className="hidden md:block">
   <CardHeader>
-    <CardTitle>Arthas Menethil</CardTitle>
-    <CardDescription>Prince of Lordaeron</CardDescription>
+    <CardTitle>Joan of Arc</CardTitle>
+    <CardDescription>Maid of Orleans</CardDescription>
   </CardHeader>
-  <CardContent className="text-white">
-    The former Crown Prince of Lordaeron, who became the Lich King after taking
-    up the cursed blade Frostmourne.
+  <CardContent className="text-stone-700">
+    The legendary French heroine who led armies to victory during the Hundred
+    Years War and helped turn the tide for France.
   </CardContent>
   <CardFooter className="flex items-center justify-center">
     <Button size="sm">View Profile</Button>
@@ -31,12 +31,6 @@ import { Button } from "@/components/ui/warcraftcn/button";
 </Card>
 
 <div className="md:hidden">Card still not supporting small resolutions</div>
-
-## Installation
-
-```bash
-pnpm dlx shadcn@latest add https://warcraftcn.com/r/card.json
-```
 
 ## Usage
 

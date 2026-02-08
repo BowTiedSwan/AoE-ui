@@ -14,12 +14,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "warcraftcn - Warcraft UI components",
+  title: "aoe2-ui - Age of Empires 2 UI components",
   description:
-    "A set of components inspired by classic Warcraft III RTS UI aesthetics. Open source, copy paste ready. Works with your favorite frameworks. Fan made. No affiliation.",
-  openGraph: {
-    images: "/warcraftcn-og.png",
-  },
+    "A set of components inspired by the classic Age of Empires II RTS UI aesthetics. Open source, copy paste ready. Works with your favorite frameworks. Fan made. No affiliation.",
 };
 
 export default function Layout({ children }: LayoutProps<"/">) {

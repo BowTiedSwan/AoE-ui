@@ -7,14 +7,14 @@ import { cn } from "@/lib/utils";
 import "@/components/ui/warcraftcn/styles/warcraft.css";
 
 const buttonVariants = cva(
-  "fantasy inline-flex shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium text-sm outline-none transition-all duration-100 focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:scale-95 active:brightness-75 active:shadow-inner",
+  "fantasy inline-flex shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-sm font-medium text-sm outline-none transition-all duration-100 focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:scale-[0.97] active:brightness-90",
   {
     variants: {
       variant: {
         default:
-          "bg-center bg-cover bg-no-repeat text-white shadow-lg transition-shadow hover:shadow-xl hover:brightness-110",
+          "text-amber-100 tracking-wide uppercase transition-shadow",
         frame:
-          "bg-center bg-cover bg-no-repeat text-white shadow-lg transition-shadow hover:shadow-xl hover:brightness-110",
+          "text-amber-100 tracking-wide uppercase transition-shadow",
       },
       size: {
         default: "",
@@ -44,11 +44,11 @@ function Button({
   const bgClass =
     variant === "frame"
       ? size === "sm"
-        ? "wc-btn-bg-frame-sm"
-        : "wc-btn-bg-frame"
+        ? "aoe-btn-bg-frame-sm"
+        : "aoe-btn-bg-frame"
       : size === "sm"
-      ? "wc-btn-bg-sm"
-      : "wc-btn-bg";
+      ? "aoe-btn-bg-sm"
+      : "aoe-btn-bg";
 
   const sizeClass = () => {
 

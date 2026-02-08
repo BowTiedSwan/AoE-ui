@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Suspense } from "react";
 import { Button } from "@/components/ui/button";
@@ -13,8 +12,8 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 flex h-14 w-full max-w-full shrink-0 items-center gap-2 overflow-hidden border-b bg-background/95">
       <div className="flex h-full w-full min-w-0 max-w-[1400px] items-center gap-2 px-2 md:mx-auto md:gap-5 md:border-r md:border-l md:px-6">
         <Link className="hidden items-center gap-2 md:flex" href="/">
-          <Image alt="logo" height={32} src="/warcraftcn-logo.png" width={32} />{" "}
-          <h2 className="hidden font-bold md:inline-block">warcraftcn/ui</h2>
+          <span className="text-xl">&#9876;</span>
+          <h2 className="hidden font-bold md:inline-block">aoe2/ui</h2>
         </Link>
 
         <div className="block md:hidden">
